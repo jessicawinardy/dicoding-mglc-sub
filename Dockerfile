@@ -1,4 +1,4 @@
-FROM node: 18.20.3
+FROM node:18.20.3
 WORKDIR /usr/src/app
 COPY . .
 COPY .env .
