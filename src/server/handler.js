@@ -33,7 +33,7 @@ async function postPredictHandler(request, h) {
 async function getHistoriesHandler(req, h) {
   try {
     const firestore = new Firestore();
-    const snapshot = await firestore.collection("prediction").get();
+    const snapshot = await firestore.collection("predictions").get();
     const histories = snapshot.docs.map((doc) => ({
       id: doc.id,
       history: doc.data(),
